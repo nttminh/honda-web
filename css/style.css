@@ -1,0 +1,169 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Avenir Next LT Pro', sans-serif;
+}
+section > header {
+	letter-spacing: 0.1rem;
+}
+.header .hamburger-menu i {
+	font-size: 1.8rem;
+}
+.header .hamburger-menu span {
+	font-style: 0.5rem;
+}
+.header .brand-logo {
+	width: 10.25rem;
+}
+
+/* Recall */
+.recall {
+	margin-top: 3.3rem;
+}
+.recall .warn-symbol {
+	position: relative;
+	left: -1.3rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	margin-right: 0.5rem;
+	background-color: #ff9600;
+	align-items: center;
+	transform: skew(342deg);
+}
+.recall .warn-symbol i,
+.recall .warn-symbol span {
+	margin-right: 0.5rem;
+	transform: skew(-342deg);
+}
+.recall .slick-dots .dot {
+	display: inline-block;
+	height: 0.25rem;
+	border-color: #dadada;
+}
+
+/* Carousel */
+.carousel {
+	height: 16rem;
+	margin-bottom: 2rem;
+}
+
+/* Our Company */
+.our-company {
+	text-align: center;
+}
+.content {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+.our-company .content section {
+	display: flex;
+	flex-direction: column;
+	height: 91vw;
+
+	background-position: center;
+	background-size: cover;
+
+	padding: 0 1rem 1rem 2rem;
+	justify-content: flex-end;
+}
+.our-company .content section a {
+	color: #fff;
+}
+
+/* Call to action */
+.cta article > img {
+	width: 100%;
+	transition: all 0.3s;
+}
+.cta article > img:hover {
+	transform: scale(1.05);
+}
+.cta article {
+	background-color: #f9f9f9;
+	overflow: hidden;
+}
+.cta .instagram-post {
+	position: relative;
+}
+.cta .instagram-post img {
+	object-fit: cover;
+	width: 100%;
+	height: 90vw;
+}
+
+.cta .container-instagram {
+	position: absolute;
+	top: 0.5rem;
+	right: 1rem;
+	width: 3rem;
+	height: 3rem;
+	font-size: 3rem;
+	color: #fff;
+}
+.cta .twitter-post {
+	position: relative;
+	background-color: #f2f2f2;
+}
+.cta .twitter-post .twitter-icon {
+	position: absolute;
+	right: 0rem;
+	width: 3rem;
+	height: 3rem;
+	font-size: 1.5rem;
+	color: #4d9fe0;
+}
+.cta .twitter-post .info {
+	align-items: center;
+	margin-bottom: 0.5rem;
+}
+.cta .twitter-post .info img {
+	width: 3rem;
+	height: 3rem;
+	margin-right: 0.5rem;
+}
+.cta .twitter-post .info-content > * {
+	font-size: 0.875rem;
+	color: #337ab7;
+	margin: 0;
+	padding: 0;
+}
+.cta .twitter-post .description {
+	font-size: 1.5rem;
+}
+
+/* Footer */
+.footer {
+	background-color: #eee;
+}
+.footer .row ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+.footer .row ul > li > a {
+	text-decoration: none;
+	color: #000;
+}
+.footer .row article h4 {
+	color: #8f8f8f;
+	font-weight: bold;
+	letter-spacing: 0.05rem;
+	margin-top: 2rem;
+}
+
+/* arrow down ::before */
+.brand-tile::before {
+	position: absolute;
+	content: '';
+	top: 0px;
+	right: 0px;
+	width: 0;
+	height: 0;
+	font-size: 0;
+	line-height: 0;
+	border-left: 15px solid transparent;  /* left arrow slant */
+	border-right: 15px solid transparent; /* right arrow slant */
+	border-bottom: 15px solid yellow; /* bottom, add background color here */
+	z-index: 10;
+}

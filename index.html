@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Link Swiper's CSS -->
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/swiper/swiper-bundle.min.css"
+		/>
+
+		<!-- import favicon icon -->
+		<link
+			rel="shortcut icon"
+			href="https://www.honda.com/areas/honda_homepage/img/favicons/favicon.ico?v=2"
+		/>
+		<!-- Bootstrap -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+			crossorigin="anonymous"
+		/>
+		<!-- Font -->
+		<link
+			href="http://fonts.cdnfonts.com/css/avenir-next-lt-pro"
+			rel="stylesheet"
+		/>
+		<!-- Font Awesome -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+			integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+
+		<title>BC24 HTML5&CSS3 HONDA</title>
+
+		<link rel="stylesheet" href="./css/carousel.css" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="stylesheet" href="./css/responsive.css" />
+		<link rel="stylesheet" href="./css/product-grid.css" />
+	</head>
+	<body>
+		<header class="header fixed-top">
+			<div class="d-flex justify-content-between py-2 px-4 bg-white border-bottom">
+				<div class="hamburger-menu">
+					<button class="bg-transparent border-0">
+						<i class="fa fa-bars me-1 align-bottom"></i>
+						<span class="d-none d-sm-inline fw-bold text-uppercase">Menu</span>
+					</button>
+				</div>
+				<div class="brand text-center">
+					<img
+						class="brand-logo"
+						src="https://www.honda.com/-/media/Honda-Homepage/Images/Logos/svg/Honda-Power-Of-Dreams-New.svg"
+						alt=""
+					/>
+				</div>
+				<div class="search text-end">
+					<a href="#" class="d-none d-md-inline me-5 text-decoration-none text-black">About Us</a>
+					<button type="button" class="btn">  
+						<i class="fa fa-search fs-2"></i>
+					</button>
+				</div>
+			</div>
+		</header>
+		<section class="recall d-flex">
+			<a
+				href="#"
+				class="warn-symbol text-decoration-none overflow-hidden text-white d-flex"
+			>
+				<i class="fa fa-exclamation-circle fs-2"></i>
+				<span class="d-none d-md-inline-block">Airbag Recall</span>
+			</a>
+			<div class="info pt-2">
+				<h6 class="text-secondary fw-bold">Airbag Recall</h6>
+				<h4>Important Information About Airbag Recalls</h4>
+				<a class="text-warning text-decoration-none" href="#">MORE ></a>
+			</div>
+			<div class="d-none d-md-block slick-dots ms-auto me-3 align-self-center">
+				<button class="dot border border-5 rounded me-2 border-warning"></button>
+				<button class="dot border border-5 rounded  me-2"></button>
+			</div>
+		</section>
+		<section class="carousel">
+			<!-- Swiper -->
+			<div class="swiper mySwiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="./images/carrousel-img.webp" alt="" />
+					</div>
+					<div class="swiper-slide">
+						<img src="https://www.honda.com/-/media/Honda-Homepage/Images/Homepage/Hero-card/car-of-the-year/Honda_Hero_NA-Car-Of-The-Year_Tablet_1982x793.jpg" alt="" />
+					</div>
+				</div>
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-pagination"></div>
+			</div>
+		</section>
+		<section class="product-grid">
+				<div href="#" class="brand-tile bt-bluecar text-white">
+					<img
+						src="./images/logo/logo_honda_autos.webp"
+						alt=""
+					/>
+					<p class="d-none d-lg-block">Honda Autos</p>
+					<span>GO</span>
+        		</div>
+				<a href="#" class="img-tile it-bluecar">
+					<img
+						src="./images/product-grid/hinh10.webp"
+						alt=""
+					/>
+       			</a>
+				<a href="#" class="brand-tile bt-moto">
+					<img
+						src="./images/logo/logo_honda_powersports.webp"
+						alt=""
+					/>
+					<p class="d-none d-lg-block">Motorcycles, ATVs, Scooters, SxS</p>
+					<span>GO</span>
+    		    </a>
+				<a href="#" class="img-tile it-moto">
+					<img
+						src="./images/product-grid/hinh15.jpg"
+						alt=""
+					/>
+        </a>
+				<a href="#" class="brand-tile bt-graycar">
+					<img
+						src="./images/logo/logo_acura.webp"
+						alt=""
+					/>
+					<p class="d-none d-lg-block">Acura Autos</p>
+					<span>GO</span>
+        </a>
+				<a href="#" class="img-tile it-graycar">
+					<img
+						src="./images/product-grid/hinh8.webp"
+						alt=""
+					/>
+        </a>
+				<a href="#" class="brand-tile bt-grasscutter ">
+					<img
+						src="./images/logo/logo_honda_corporate_red.webp"
+						alt=""
+					/>
+					<p class="d-none d-lg-block text-black">Generators, Mowers & Power Equipment</p>
+					<span class="text-black border-dark">GO</span>
+        </a>
+				<a href="#" class="img-tile it-grasscutter">
+					<img
+						src="./images/product-grid/hinh14.jpg"
+						alt=""
+					/>
+        </a>
+				<a href="#" class="brand-tile bt-gxengine">
+					<img
+						src="./images/logo/logo_honda_corporate_white.webp"
+						alt=""
+					/>
+					<p class="d-none d-lg-block">General Purpose Engines</p>
+					<span>GO</span>
+        </a>
+				<a href="#" class="img-tile it-gxengine">
+					<img
+						src="./images/product-grid/hinh11.jpg"
+						alt=""
+					/>
+        </a>
+				<a href="#" class="brand-tile bt-marine">
+					<img
+						src="./images/logo/logo_honda_marine.png"
+						alt=""
+					/>
+					<p class="d-none d-lg-block text-black">Outboard Motors</p>
+					<span class="text-black border-dark">GO</span>
+        </a>
+				<a href="#" class="img-tile it-marine">
+					<img
+						src="./images/product-grid/hinh13.webp"
+						alt=""
+					/>
+        </a>
+				<a href="#" class="brand-tile bt-jet">
+					<img
+						src="./images/logo/logo_honda_jet.webp"
+						alt=""
+					/>
+					<p class="d-none d-lg-block">Honda Aircraft Company</p>
+					<span>GO</span>
+        </a>
+				<a href="#" class="img-tile it-jet">
+					<img
+						src="./images/product-grid/hinh12.jpg"
+						alt=""
+					/>
+        </a>
+				<a href="#" class="brand-tile bt-racing">
+					<img
+						src="./images/logo/logo_honda_racing.webp"
+						alt=""
+					/>
+					<p class="d-none d-lg-block">Auto Racing</p>
+					<span>GO</span>
+        </a>
+				<a href="#" class="img-tile it-racing">
+					<img
+						src="./images/product-grid/hinh9.jpg"
+						alt=""
+					/>
+        </a>
+			</div>
+		</section>
+		<section class="our-company">
+		<header class="title p-4">
+			<h4 class="fw-bold">
+			OUR COMPANY
+			</h4>
+		</header>
+		<main class="content text-white">
+			<section class="mobility" style="background-image: url('./images/our-company/hinh20.jpg');">
+			<h4 class="fw-bold">MOBILITY</h4>
+			<p>We're creating tomorrow's world to elevate the joy and freedom of mobility for all.</p>
+			<a class="text-decoration-none fw-bold" href="#">MORE ></a>
+			</section>
+			<section class="environment" style="background-image: url('./images/our-company/hinh19.jpg');"><h4  class="fw-bold">ENVIRONMENT</h4>
+			<p>We’re reducing our environmental footprint at every step to help preserve the planet for future generations.</p>
+			<a class="text-decoration-none fw-bold" href="#">MORE ></a>
+			</section>
+			<section class="community" style="background-image: url('./images/our-company/hinh18.jpg');"><h4  class="fw-bold">COMMUNITY</h4>
+			<p>We’ve always been deeply involved in the communities where we work and live.</p>
+			<a class="text-decoration-none fw-bold" href="#">MORE ></a>
+			</section>
+			<section class="safety" style="background-image: url('./images/our-company/hinh21.jpg');"><h4  class="fw-bold">SAFETY</h4>
+			<p>Honda envisions a future where collisions are a thing of the past. See how we’ll get there starting with our model year 2040 vehicles.</p>
+			<a class="text-decoration-none fw-bold" href="#">MORE ></a>
+			</section>
+			<section class="dreams" style="background-image: url('https://www.honda.com/-/media/Honda-Homepage/Images/Homepage/Our-Company/mobile/homepage-p1-philosophy-mobile.jpg?mw=768&hash=C60E57369E25F7CF4592B5B33B2B1A6D7DAEFC5E');"><h4  class="fw-bold">THE POWER OF DREAMS</h4>
+			<p>See what makes a Honda, who makes a Honda, how we got here, and where we're headed.</p>
+			<a class="text-decoration-none fw-bold d-inline-block" href="#">MORE ></a>
+			</section>
+		</main>
+		</section>
+		<section class="cta pb-5 px-sm-5">
+		<header class="title p-4">
+			<h4 class="fw-bold text-center">
+			WHAT WE'RE UP TO
+			</h4>
+		</header>
+		<main class="container-fluid">
+			<div class="row g-0">
+				<article class="col-12 col-sm-6 col-lg-4  text-center">
+				<img src="./images/cta/hinh16.jpg" alt="">
+				<div class="cta-content p-4">
+					<h5 class="fw-bold">Honda Collection Hall</h5>
+					<p>Explore hundreds of our storied creations in this 360</p>
+					<a href="#" class="text-decoration-none fw-bold">LAUNCH VIRTUAL MUSEUM ></a>
+				</div>
+				</article>
+				<article class="col-12 col-sm-6 col-lg-4  text-center">
+				<img class="d-none d-md-block" src="./images/cta/podcast-logo.webp" alt="">
+				<div class="cta-content p-4">
+					<h5 class="fw-bold">Honda Stories</h5>
+					<p>Go behind the badge and into the world of Honda Stories. Hear an inside look at Honda from a wide variety of people including company, industry experts and championship drivers.</p>
+					<a href="#" class="text-decoration-none fw-bold">Listen Now ></a>
+				</div>
+				</article>
+				<article class="col-12 col-sm-6 col-lg-4  text-center">
+				<img class="d-none d-md-block" src="./images/cta/hinh7.webp" alt="">
+				<div class="cta-content p-4">
+					<h5 class="fw-bold">Interior Design Philosophy</h5>
+					<p>Honda showcases a new interior design philosophy that will shape the styling of future Honda models.</p>
+					<a href="#" class="text-decoration-none fw-bold">Watch ></a>
+				</div>
+				</article>
+				<article class="instagram-post col-12 col-sm-6 col-lg-4">
+					<img class="" src="https://scontent-iad3-1.cdninstagram.com/v/t51.2885-15/277271353_156435920114026_9187832418711208118_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=8ae9d6&_nc_ohc=yiuVnwdUMfgAX8wrkQG&_nc_ht=scontent-iad3-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT83Yk0yBFETgMFG8atKIQHKuBvOMDYxmpvKXG95clNKIQ&oe=62473965" alt="" />
+					<div class="container-instagram">
+						<i class="fab fa-instagram"></i>
+					</div>
+				</article>
+				<article class="twitter-post col-12 col-sm-6 col-lg-4 p-4">
+					<div class="twitter-icon">
+						<i class="fab fa-twitter"></i>
+					</div>
+					<div class="post-content h-100 d-flex flex-column justify-content-center">
+						<div class="info d-flex w-100">
+							<img class="twitter-avatar" src="https://pbs.twimg.com/profile_images/1358890920083550208/i4IrP4VF_normal.png" alt="" />
+							<div class="info-content">
+								<h3 class="twitter-name">Acura</h3>
+								<span class="twitter-username">@Acura</span>
+							</div>
+						</div>
+						<p class="description">
+							350 supercars are currently in production. Did you manage to snag one before it completely sold out in 24 hours?… <a class="text-decoration-none fw-light" href="https://t.co/pfpaQhYZ5X">https://t.co/pfpaQhYZ5X</a>
+						</p>
+						<span class="time pb-4">
+							<a class="text-decoration-none fw-light" href="https://twitter.com/Acura/status/1508489159882780686" target="_blank">05:00 PM - 28 Mar 2022</a>
+						</span>
+						<div class="actions">
+							<a class="text-decoration-none me-4 text-secondary" href="https://twitter.com/intent/tweet?in_reply_to=1508489159882780686" target="_blank">
+								<i class="fa fa-reply"></i>
+							</a>
+							<a class="text-decoration-none me-4 text-secondary" href="https://twitter.com/intent/retweet?tweet_id=1508489159882780686" target="_blank">
+								<i class="fa fa-retweet"></i> 30</a>
+							<a class="text-decoration-none me-4 text-secondary" href="https://twitter.com/intent/tweet?in_reply_to=1508489159882780686" target="_blank">
+								<i class="fa fa-retweet"></i> 133</a>
+						</div>
+					</div>
+				</article>
+				<article class="instagram-post col-12 col-sm-6 col-lg-4">
+					<img src="https://scontent-iad3-1.cdninstagram.com/v/t51.2885-15/275939136_1082697758945539_7887257409315143775_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=8ae9d6&_nc_ohc=-ClzN0XS6hAAX-mwvZb&_nc_ht=scontent-iad3-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT948BKp2x_zmM78F2iVdGmusvH1BocZSVMI47dBSKX1sw&oe=6247DCC4" alt="">
+					<div class="container-instagram">
+						<i class="fab fa-instagram"></i>
+					</div>
+				</article>
+			</div>
+		</main>
+		</section>
+		<footer class="footer">
+			<div class="container-fluid p-5">
+				<div class="row links">
+					<article class="col-xs-12 col-sm-6 col-lg-4" data-attribute="our-brands">
+							<h4>OUR BRANDS</h4>
+							<ul>
+								<li class="section-title mb-3">
+									<a class="wrapper-link" href="http://automobiles.honda.com/" target="_blank">
+										<b>Honda Autos</b> <i class="fa fa-angle-right"></i>
+									</a>
+								</li>
+								<li class="section-title mb-3">
+									<a class="wrapper-link" href="http://www.acura.com/" target="_blank">
+										<b>Acura Autos</b> <i class="fa fa-angle-right"></i>
+									</a>
+								</li>
+								<li class="section-title mb-3">
+									<a class="wrapper-link" href="http://powersports.honda.com/" target="_blank">
+										<b>Honda Powersports</b> <i class="fa fa-angle-right"></i>
+										<ul>
+											<li>
+												<p>Motorcycles, ATVs, Scooters, SxS</p>
+											</li>
+										</ul>
+									</a>
+								</li>
+								<li class="section-title mb-3">
+									<a class="wrapper-link" href="http://powerequipment.honda.com/" target="_blank">
+										<b>Honda Power Equipment</b> <i class="fa fa-angle-right"></i>
+										<ul>
+											<li>
+												<p>Generators, Lawn Mowers, Pumps, Snow Blowers, Tillers, Trimmers</p>
+											</li>
+										</ul>
+									</a>
+								</li>
+								<li class="section-title mb-3">
+									<a class="wrapper-link" href="http://engines.honda.com/" target="_blank">
+										<b>Honda Engines</b> <i class="fa fa-angle-right"></i>
+										<ul>
+											<li>
+												<p>Small Engines, Manuals, Parts &amp; Resources</p>
+											</li>
+										</ul>
+									</a>
+								</li>
+								<li class="section-title mb-3">
+									<a class="wrapper-link" href="http://marine.honda.com/" target="_blank">
+										<b>Honda Marine</b> <i class="fa fa-angle-right"></i>
+										<ul>
+											<li>
+												<p>Outboard Motors, Parts &amp; Accessories</p>
+											</li>
+										</ul>
+									</a>
+								</li>
+								<li class="section-title mb-3">
+									<a class="wrapper-link" href="http://www.hondajet.com/" target="_blank">
+										<b>HondaJet</b> <i class="fa fa-angle-right"></i>
+										<ul>
+											<li>
+												<p>Honda Aircraft Company</p>
+											</li>
+										</ul>
+									</a>
+								</li>
+								<li class="section-title mb-3">
+									<a class="wrapper-link" href="http://asimo.honda.com/" target="_blank">
+										<b>ASIMO</b> <i class="fa fa-angle-right"></i>
+										<ul>
+											<li>
+												<p>The World's Most Advanced Humanoid Robot</p>
+											</li>
+										</ul>
+									</a>
+								</li>
+							</ul>
+							<div class="d-none d-sm-block d-lg-none racing visible-xs-inline visible-md-inline visible-lg-inline" data-attribute="racing">
+								<h4>RACING</h4>
+								<ul>
+		
+										<li class="section-title mb-3">
+											<a class="wrapper-link" href="http://hpd.honda.com/" target="_blank">
+												<b>Auto Racing</b> <i class="fa fa-angle-right"></i>
+											</a>
+										</li>
+										<li class="section-title mb-3">
+											<a class="wrapper-link" href="http://powersports.honda.com/racing.aspx" target="_blank">
+												<b>Motorcycle Racing</b> <i class="fa fa-angle-right"></i>
+											</a>
+										</li>
+		
+								</ul>
+								<h4>RECALLS</h4>
+								<ul>
+		
+										<li class="section-title mb-3">
+											<a class="wrapper-link" href="http://owners.honda.com/service-maintenance/recalls" target="_blank">
+												<b>Honda Recalls </b> <i class="fa fa-angle-right"></i>
+											</a>
+										</li>
+										<li class="section-title mb-3">
+											<a class="wrapper-link" href="http://owners.acura.com/service-maintenance/recalls" target="_blank">
+												<b>Acura Recalls</b> <i class="fa fa-angle-right"></i>
+											</a>
+										</li>
+										<li class="section-title mb-3">
+											<a class="wrapper-link" href="http://powersports.honda.com/recalls.aspx" target="_blank">
+												<b>Powersports Recalls</b> <i class="fa fa-angle-right"></i>
+											</a>
+										</li>
+										<li class="section-title mb-3">
+											<a class="wrapper-link" href="http://powerequipment.honda.com/support/recalls-and-updates" target="_blank">
+												<b>Power Equipment Recalls</b> <i class="fa fa-angle-right"></i>
+											</a>
+										</li>
+										<li class="section-title mb-3">
+											<a class="wrapper-link" href="http://marine.honda.com/support/recalls" target="_blank">
+												<b>Marine Recalls</b> <i class="fa fa-angle-right"></i>
+											</a>
+										</li>
+										<li class="section-title mb-3">
+											<a class="wrapper-link" href="https://engines.honda.com/support-and-service/recalls-updates" target="_blank">
+												<b>Engines Recalls</b> <i class="fa fa-angle-right"></i>
+											</a>
+										</li>
+		
+								</ul>
+								<h4>SERVICES</h4>
+								<ul>
+		
+										<li class="section-title mb-3">
+											<a class="wrapper-link" href="http://www.hondafinancialservices.com/" target="_blank">
+												<b>Honda Financial Services</b> <i class="fa fa-angle-right"></i>
+											</a>
+										</li>
+										<li class="section-title mb-3">
+											<a class="wrapper-link" href="http://owners.honda.com/" target="_blank">
+												<b>Honda Owners</b> <i class="fa fa-angle-right"></i>
+											</a>
+										</li>
+										<li class="section-title mb-3">
+											<a class="wrapper-link" href="http://www.acurafinancialservices.com/" target="_blank">
+												<b>Acura Financial Services</b> <i class="fa fa-angle-right"></i>
+											</a>
+										</li>
+										<li class="section-title mb-3">
+											<a class="wrapper-link" href="http://owners.acura.com/" target="_blank">
+												<b>Acura Owners</b> <i class="fa fa-angle-right"></i>
+											</a>
+										</li>
+		
+								</ul>
+						</>
+					</article>
+					<article class="col-xs-12 col-sm-6 col-md-4" data-attribute="about-us">
+	
+							<h4>ABOUT US</h4>
+							<ul>
+	
+									<li class="section-title mb-3">
+										<a class="wrapper-link" href="/about" target="">
+											<b>The Power of Dreams</b> <i class="fa fa-angle-right"></i>
+										</a>
+									</li>
+									<li class="section-title mb-3">
+										<a class="wrapper-link" href="/mobility" target="">
+											<b>Mobility</b> <i class="fa fa-angle-right"></i>
+										</a>
+									</li>
+									<li class="section-title mb-3">
+										<a class="wrapper-link" href="/environment" target="">
+											<b>Environment</b> <i class="fa fa-angle-right"></i>
+										</a>
+									</li>
+									<li class="section-title mb-3">
+										<a class="wrapper-link" href="/community" target="">
+											<b>Community</b> <i class="fa fa-angle-right"></i>
+										</a>
+									</li>
+									<li class="section-title mb-3">
+										<a class="wrapper-link" href="/safety" target="">
+											<b>Safety</b> <i class="fa fa-angle-right"></i>
+										</a>
+									</li>
+									<li class="section-title mb-3">
+										<a class="wrapper-link" href="/history" target="">
+											<b>History</b> <i class="fa fa-angle-right"></i>
+										</a>
+									</li>
+									<li class="section-title mb-3">
+										<a class="wrapper-link" href="/operations" target="">
+											<b>Operations</b> <i class="fa fa-angle-right"></i>
+										</a>
+									</li>
+									<li class="section-title mb-3">
+										<a class="wrapper-link" href="/careers" target="">
+											<b>Careers</b> <i class="fa fa-angle-right"></i>
+										</a>
+									</li>
+	
+							</ul>
+							<h4>More To Explore</h4>
+							<ul>
+	
+									<li class="section-title mb-3">
+										<a class="wrapper-link" href="http://www.hondaresearch.com/" target="_blank">
+											<b>Research &amp; Development</b> <i class="fa fa-angle-right"></i>
+										</a>
+									</li>
+									<li class="section-title mb-3">
+										<a class="wrapper-link" href="http://www.hondainamerica.com/" target="_blank">
+											<b>Honda in America</b> <i class="fa fa-angle-right"></i>
+										</a>
+									</li>
+									<li class="section-title mb-3">
+										<a class="wrapper-link" href="http://csr.honda.com/" target="_blank">
+											<b>Corporate Social Responsibility</b> <i class="fa fa-angle-right"></i>
+										</a>
+									</li>
+									<li class="section-title mb-3">
+										<a class="wrapper-link" href="http://world.honda.com/" target="_blank">
+											<b>Honda Worldwide</b> <i class="fa fa-angle-right"></i>
+										</a>
+									</li>
+									<li class="section-title mb-3">
+										<a class="wrapper-link" href="http://world.honda.com/investors/index.html" target="_blank">
+											<b>Investor Relations</b> <i class="fa fa-angle-right"></i>
+										</a>
+									</li>
+									<li class="section-title mb-3">
+										<a class="wrapper-link" href="http://hondanews.com/" target="_blank">
+											<b>Media Newsroom </b> <i class="fa fa-angle-right"></i>
+										</a>
+									</li>
+	
+							</ul>
+					</article>
+					<article class="d-md-none d-lg-block col-xs-12 col-sm-6 col-md-4 racing visible-xs-inline visible-md-inline visible-lg-inline" data-attribute="racing">
+							<h4>RACING</h4>
+							<ul>
+	
+									<li class="section-title mb-3">
+										<a class="wrapper-link" href="http://hpd.honda.com/" target="_blank">
+											<b>Auto Racing</b> <i class="fa fa-angle-right"></i>
+										</a>
+									</li>
+									<li class="section-title mb-3">
+										<a class="wrapper-link" href="http://powersports.honda.com/racing.aspx" target="_blank">
+											<b>Motorcycle Racing</b> <i class="fa fa-angle-right"></i>
+										</a>
+									</li>
+	
+							</ul>
+							<h4>RECALLS</h4>
+							<ul>
+	
+									<li class="section-title mb-3">
+										<a class="wrapper-link" href="http://owners.honda.com/service-maintenance/recalls" target="_blank">
+											<b>Honda Recalls </b> <i class="fa fa-angle-right"></i>
+										</a>
+									</li>
+									<li class="section-title mb-3">
+										<a class="wrapper-link" href="http://owners.acura.com/service-maintenance/recalls" target="_blank">
+											<b>Acura Recalls</b> <i class="fa fa-angle-right"></i>
+										</a>
+									</li>
+									<li class="section-title mb-3">
+										<a class="wrapper-link" href="http://powersports.honda.com/recalls.aspx" target="_blank">
+											<b>Powersports Recalls</b> <i class="fa fa-angle-right"></i>
+										</a>
+									</li>
+									<li class="section-title mb-3">
+										<a class="wrapper-link" href="http://powerequipment.honda.com/support/recalls-and-updates" target="_blank">
+											<b>Power Equipment Recalls</b> <i class="fa fa-angle-right"></i>
+										</a>
+									</li>
+									<li class="section-title mb-3">
+										<a class="wrapper-link" href="http://marine.honda.com/support/recalls" target="_blank">
+											<b>Marine Recalls</b> <i class="fa fa-angle-right"></i>
+										</a>
+									</li>
+									<li class="section-title mb-3">
+										<a class="wrapper-link" href="https://engines.honda.com/support-and-service/recalls-updates" target="_blank">
+											<b>Engines Recalls</b> <i class="fa fa-angle-right"></i>
+										</a>
+									</li>
+	
+							</ul>
+							<h4>SERVICES</h4>
+							<ul>
+	
+									<li class="section-title mb-3">
+										<a class="wrapper-link" href="http://www.hondafinancialservices.com/" target="_blank">
+											<b>Honda Financial Services</b> <i class="fa fa-angle-right"></i>
+										</a>
+									</li>
+									<li class="section-title mb-3">
+										<a class="wrapper-link" href="http://owners.honda.com/" target="_blank">
+											<b>Honda Owners</b> <i class="fa fa-angle-right"></i>
+										</a>
+									</li>
+									<li class="section-title mb-3">
+										<a class="wrapper-link" href="http://www.acurafinancialservices.com/" target="_blank">
+											<b>Acura Financial Services</b> <i class="fa fa-angle-right"></i>
+										</a>
+									</li>
+									<li class="section-title mb-3">
+										<a class="wrapper-link" href="http://owners.acura.com/" target="_blank">
+											<b>Acura Owners</b> <i class="fa fa-angle-right"></i>
+										</a>
+									</li>
+	
+							</ul>
+					</article>
+	
+			</div>
+				<div class="row"></div>
+				<div class="row"></div>
+				<div class="row"></div>
+			</div>
+		</footer>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+		<!-- NOTE: prior to v2.2.1 tiny-slider.js need to be in <body> -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+			crossorigin="anonymous"
+		></script>
+		<!-- Swiper JS -->
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+		<!-- Initialize Swiper -->
+		<script>
+			var swiper = new Swiper('.mySwiper', {
+				cssMode: true,
+				loop: true,
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev',
+				},
+				pagination: {
+					el: '.swiper-pagination',
+				},
+				mousewheel: true,
+				keyboard: true,
+			});
+		</script>
+	</body>
+</html>

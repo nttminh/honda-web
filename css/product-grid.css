@@ -1,0 +1,189 @@
+.product-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-areas:
+		'bt-bluecar it-bluecar it-bluecar'
+		'it-moto it-moto bt-moto'
+		'bt-graycar it-graycar it-graycar'
+		'it-grasscutter it-grasscutter bt-grasscutter'
+		'bt-gxengine it-gxengine it-gxengine'
+		'it-marine it-marine bt-marine'
+		'bt-jet it-jet it-jet'
+		'it-racing it-racing bt-racing';
+}
+.brand-tile {
+	text-decoration: none;
+	aspect-ratio: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem;
+}
+.brand-tile:hover {
+	filter: brightness(110%);
+}
+.brand-tile > img {
+	object-fit: cover;
+	width: 100%;
+}
+.brand-tile p,
+.brand-tile span {
+	text-align: center;
+	margin-top: 0.3rem;
+	color: white;
+}
+.brand-tile > span {
+	font-weight: bold;
+	letter-spacing: 0.05rem;
+	border-bottom: 2px solid white;
+}
+.img-tile {
+	overflow: hidden;
+}
+.img-tile img {
+	object-fit: cover;
+	width: 100%;
+	height: 33.33vw;
+}
+.brand-tile:hover + .img-tile img,
+.img-tile:hover img {
+	transition: all 0.5s;
+	transform: scale(1.05);
+}
+
+.bt-bluecar {
+	grid-area: bt-bluecar;
+	background-color: #007cc2;
+}
+.bt-moto {
+	grid-area: bt-moto;
+	background-color: #cc0001;
+}
+.bt-graycar {
+	grid-area: bt-graycar;
+	background-color: #000;
+}
+.bt-grasscutter {
+	grid-area: bt-grasscutter;
+	background-color: #eee;
+}
+.bt-gxengine {
+	grid-area: bt-gxengine;
+	background-color: #cc0001;
+}
+.bt-marine {
+	grid-area: bt-marine;
+	background-color: #eee;
+}
+.bt-jet {
+	grid-area: bt-jet;
+	background-color: #cc0001;
+}
+.bt-racing {
+	grid-area: bt-racing;
+	background-color: #cc0001;
+}
+.it-bluecar {
+	grid-area: it-bluecar;
+	background-color: blue;
+}
+
+.it-moto {
+	grid-area: it-moto;
+	background-color: brown;
+}
+.it-graycar {
+	grid-area: it-graycar;
+	background-color: gray;
+}
+.it-grasscutter {
+	grid-area: it-grasscutter;
+	background-color: white;
+}
+.it-gxengine {
+	grid-area: it-gxengine;
+	background-color: red;
+}
+.it-marine {
+	grid-area: it-marine;
+	background-color: aqua;
+}
+.it-jet {
+	grid-area: it-jet;
+	background-color: cornflowerblue;
+}
+.it-racing {
+	grid-area: it-racing;
+	background-color: red;
+}
+
+@media screen and (min-width: 768px) {
+	.product-grid {
+		grid-template-columns: repeat(4, 1fr);
+		grid-auto-rows: 25vw;
+		grid-template-areas:
+			'bt-bluecar     it-bluecar    it-bluecar bt-moto'
+			'bt-grasscutter it-bluecar    it-bluecar it-moto'
+			'it-grasscutter it-graycar    it-graycar bt-graycar'
+			'it-marine  bt-marine it-jet bt-jet'
+			'bt-gxengine    it-gxengine   bt-racing it-racing';
+	}
+	.img-tile img {
+		height: 100%;
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.product-grid {
+		grid-template-columns: repeat(6, 1fr);
+		grid-auto-rows: 16.67vw;
+		grid-template-areas:
+			'bt-bluecar     it-bluecar    it-bluecar bt-moto    it-moto    it-moto'
+			'bt-grasscutter it-bluecar    it-bluecar it-graycar it-graycar bt-graycar'
+			'it-grasscutter bt-jet        it-jet     it-jet     it-racing  it-racing'
+			'bt-gxengine    it-gxengine   it-marine  it-marine  bt-marine  bt-racing';
+	}
+	.img-tile img {
+		height: 100%;
+		width: 100%;
+	}
+}
+
+/* Utility Arrows */
+.arrow-up {
+	width: 0;
+	height: 0;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+
+	border-bottom: 15px solid black;
+}
+
+.arrow-down {
+	width: 0;
+	height: 0;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+
+	border-top: 15px solid #f00;
+}
+
+.arrow-right {
+	width: 0;
+	height: 0;
+	border-top: 15px solid transparent;
+	border-bottom: 15px solid transparent;
+
+	border-left: 15px solid green;
+}
+
+.arrow-left {
+	width: 0;
+	height: 0;
+	border-top: 15px solid transparent;
+	border-bottom: 15px solid transparent;
+
+	border-right: 15px solid blue;
+}

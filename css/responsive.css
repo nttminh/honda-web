@@ -1,0 +1,79 @@
+@media screen and (min-width: 768px) {
+	.header .hamburger-menu button {
+		height: 3rem;
+	}
+	.recall {
+		margin-top: 4rem;
+	}
+	.carousel {
+		height: 32rem;
+	}
+	.content {
+		grid-template-columns: 1fr 1fr;
+	}
+	.our-company .content section {
+		position: relative;
+		padding: 0;
+		height: 50vw;
+	}
+	.our-company .content section h4 {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		letter-spacing: 0.2rem;
+	}
+	.our-company .content section p {
+		font-size: 1.0625rem;
+		padding: 0 3rem;
+		z-index: 1;
+	}
+	.our-company .content section a {
+		z-index: 1;
+		padding-bottom: 2rem;
+	}
+	.our-company .content section:last-child {
+		justify-content: flex-start;
+		height: 60vh;
+		background-image: url('../images/our-company/hinh17.jpg') !important;
+		grid-column: 1 / span 2;
+	}
+	.our-company .content section:last-child h4 {
+		margin-top: 5%;
+		position: relative;
+		display: block;
+		width: auto;
+		height: auto;
+	}
+	.our-company .content section:last-child h4,
+	.our-company .content section:last-child p,
+	.our-company .content section:last-child a {
+		color: black;
+		letter-spacing: 0.05rem;
+	}
+	.our-company .content section:last-child a {
+		width: fit-content;
+		margin: 0 auto;
+	}
+	.cta .instagram-post img {
+		height: 50vw;
+	}
+}
+@media screen and (min-width: 992px) {
+	.carousel {
+		height: 46.5rem;
+	}
+	.cta .instagram-post img {
+		height: 30vw;
+	}
+}
+@media screen and (min-width: 1024px) {
+	.our-company .content section {
+		height: 46vh;
+	}
+	.our-company .content section:last-child {
+		height: 90vh;
+	}
+}
