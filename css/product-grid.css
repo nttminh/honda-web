@@ -1,5 +1,6 @@
 .product-grid {
 	display: grid;
+	z-index: 1;
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-areas:
 		'bt-bluecar it-bluecar it-bluecar'
@@ -12,6 +13,7 @@
 		'it-racing it-racing bt-racing';
 }
 .brand-tile {
+	position: relative;
 	text-decoration: none;
 	aspect-ratio: 1;
 	display: flex;
@@ -19,6 +21,8 @@
 	justify-content: center;
 	align-items: center;
 	padding: 1rem;
+	height: 100%;
+	z-index: 10;
 }
 .brand-tile:hover {
 	filter: brightness(110%);
@@ -45,6 +49,7 @@
 	object-fit: cover;
 	width: 100%;
 	height: 33.33vw;
+	min-height: 100%;
 }
 .brand-tile:hover + .img-tile img,
 .img-tile:hover img {
@@ -149,41 +154,4 @@
 		height: 100%;
 		width: 100%;
 	}
-}
-
-/* Utility Arrows */
-.arrow-up {
-	width: 0;
-	height: 0;
-	border-left: 15px solid transparent;
-	border-right: 15px solid transparent;
-
-	border-bottom: 15px solid black;
-}
-
-.arrow-down {
-	width: 0;
-	height: 0;
-	border-left: 15px solid transparent;
-	border-right: 15px solid transparent;
-
-	border-top: 15px solid #f00;
-}
-
-.arrow-right {
-	width: 0;
-	height: 0;
-	border-top: 15px solid transparent;
-	border-bottom: 15px solid transparent;
-
-	border-left: 15px solid green;
-}
-
-.arrow-left {
-	width: 0;
-	height: 0;
-	border-top: 15px solid transparent;
-	border-bottom: 15px solid transparent;
-
-	border-right: 15px solid blue;
 }
