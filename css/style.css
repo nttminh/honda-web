@@ -13,6 +13,9 @@
 .text-red {
 	color: #cc0001;
 }
+.text-gray{
+	color: #eeeeee;
+}
 .right::before,
 .left::before,
 .up::before,
@@ -125,16 +128,19 @@ section > header {
 }
 
 /* Call to action */
-.cta article > img {
+.cta article > a > img {
 	width: 100%;
 	transition: all 0.3s;
 }
-.cta article > img:hover {
+.cta article > a > img:hover {
 	transform: scale(1.05);
 }
 .cta article {
 	background-color: #f9f9f9;
 	overflow: hidden;
+}
+.cta .cta-content {
+	background-color: #f9f9f9;
 }
 .cta .instagram-post {
 	position: relative;
