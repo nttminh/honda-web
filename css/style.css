@@ -1,9 +1,60 @@
+/* Reset CSS */
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 	font-family: 'Avenir Next LT Pro', sans-serif;
+
 }
+/* Custom Utility Classes */
+.text-blue {
+	color: #007cc2;
+}
+.text-red {
+	color: #cc0001;
+}
+.right::before,
+.left::before,
+.up::before,
+.down::before {
+	position: absolute;
+	content: '';
+	width: 0%;
+	border-width: 15px;
+	border-style: solid;
+	border-color: transparent;
+	
+	line-height: 0;
+	z-index: 10;
+}
+.right::before {
+	top: 50%;
+	left: 100%;
+	transform: translateY(-50%);
+	border-left-color: inherit;
+}
+.left::before{
+	top: 50%;
+	transform: translateY(-50%);
+	right: 100%;
+	border-right-color: inherit;
+}
+.down::before{
+	top: 100%;
+	right: 50%;
+	transform: translateX(50%);
+	border-top-color: inherit;
+}
+.up::before{
+	bottom: 100%;
+	right: 50%;
+	transform: translateX(50%);
+	border-bottom-color: inherit;
+}
+
+
+
+/* Navbar */
 section > header {
 	letter-spacing: 0.1rem;
 }
@@ -47,6 +98,8 @@ section > header {
 	height: 16rem;
 	margin-bottom: 2rem;
 }
+
+/* For product-grid, please refer to product-grid.css file */
 
 /* Our Company */
 .our-company {
@@ -152,18 +205,3 @@ section > header {
 	margin-top: 2rem;
 }
 
-/* arrow down ::before */
-.brand-tile::before {
-	position: absolute;
-	content: '';
-	top: 0px;
-	right: 0px;
-	width: 0;
-	height: 0;
-	font-size: 0;
-	line-height: 0;
-	border-left: 15px solid transparent;  /* left arrow slant */
-	border-right: 15px solid transparent; /* right arrow slant */
-	border-bottom: 15px solid yellow; /* bottom, add background color here */
-	z-index: 10;
-}
