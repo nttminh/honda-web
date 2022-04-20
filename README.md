@@ -4,6 +4,8 @@
 
 **Honda clone** displays a list of products from the Honda company and displays the results in a scrollable list.
 
+Demo: https://honda-nttminh.vercel.app/
+
 Time spent: 6 hours spent in total
 
 ## Functionality
